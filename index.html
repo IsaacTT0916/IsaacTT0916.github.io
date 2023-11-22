@@ -55,7 +55,7 @@
             float: left;
         }
 
-        .contents{
+        #contents{
             background-color:rgb(221, 230, 214);
             font-family:serif;
         }
@@ -77,22 +77,40 @@
         a.visited{
             color: orange;
         }
-a.active{
-    color:orange;
-}
+        a.active{
+            color:orange;
+        }
         a.focus{
             color:orange;
+        }
+
+        #shortcut{
+            position: relative;
+            float: right;
+            width: 30%;
+            margin-left: 10px;
+            background-color: rgb(232, 232, 232);
         }
         
     </style>
     
     <body>
+
+        <div id="shortcut">
+        <h3>ShortCut. <em>Woo Hoo!</em></h3>
+        <p>Here's a shortcut instead of wasting precious seconds scrolling. You are welcome dear fans!</p>
+        <ul>
+            <li><a href="#contents">Table of contents</a></li>
+            <li><a href="https://www.khanacademy.org/computer-programming/good-boys-bio/6224291154411520">My Biography</a></li>
+            <li><a href="#footer">Contact Number</a></li>
+        </ul>
+    </div>
         <h1 id="headbar">A Dog's Blog</h1>
 <a href= "https://www.khanacademy.org/computer-programming/good-boys-bio/6224291154411520"><h1>My Bio ( Khan Academy )</h1></a>
     
         <h3>Contents</h3>
         <h3>(The most oldest posts are on the bottom)</h3>
-        <ul class="contents">
+        <ul id="contents"> Table Of Contents
             <li><a href="#blog8"> Long Time, No See! </a></li>
              <li><a href="#blog7"> Going Back Home </a></li>
             <li><a href="#blog6"> The Great California Adventure</a></li>
